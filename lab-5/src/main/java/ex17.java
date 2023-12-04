@@ -1,28 +1,24 @@
-/*
-Створити клас записної книжки (поля: ПІБ, мобільний телефон,
- адреса електронної пошти, юзернейм в Телеграм).
- */
 /**
- * Клас, який представляє записну книжку з інформацією про контакти.
+ * Class representing a contact book containing information about contacts.
  */
 public class ex17 implements ex17interface {
 
-    /** ПІБ */
+    /** Full name */
     private String name;
-    /** Мобільний телефон */
+    /** Mobile phone */
     private String phone;
-    /** Адреса електронної пошти */
+    /** Email address */
     private String email;
-    /** Юзернейм в Телеграм */
+    /** Telegram username */
     private String telegramUsername;
 
     /**
-     * Встановлює контактну інформацію (ПІБ, мобільний телефон, адреса електронної пошти, юзернейм в Телеграм).
+     * Sets contact information (full name, mobile phone, email address, Telegram username).
      *
-     * @param name             ПІБ
-     * @param phone            мобільний телефон
-     * @param email            адреса електронної пошти
-     * @param telegramUsername юзернейм в Телеграм
+     * @param name             Full name
+     * @param phone            Mobile phone
+     * @param email            Email address
+     * @param telegramUsername Telegram username
      */
     @Override
     public void setContact(String name, String phone, String email, String telegramUsername) {
@@ -33,7 +29,7 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Конструктор за замовчуванням, ініціалізує поля записної книжки.
+     * Default constructor that initializes the fields of the contact book.
      */
     ex17() {
         name = "name1";
@@ -43,9 +39,9 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Повертає ПІБ контакту.
+     * Returns the full name of the contact.
      *
-     * @return ПІБ
+     * @return Full name
      */
     @Override
     public String getName() {
@@ -53,9 +49,9 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Повертає мобільний телефон контакту.
+     * Returns the mobile phone of the contact.
      *
-     * @return мобільний телефон
+     * @return Mobile phone
      */
     @Override
     public String getPhone() {
@@ -63,9 +59,9 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Повертає адресу електронної пошти контакту.
+     * Returns the email address of the contact.
      *
-     * @return адреса електронної пошти
+     * @return Email address
      */
     @Override
     public String getEmail() {
@@ -73,9 +69,9 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Повертає юзернейм в Телеграм контакту.
+     * Returns the Telegram username of the contact.
      *
-     * @return юзернейм в Телеграм
+     * @return Telegram username
      */
     @Override
     public String getTelegramUsername() {
@@ -83,7 +79,7 @@ public class ex17 implements ex17interface {
     }
 
     /**
-     * Виводить інформацію про контакт у консоль.
+     * Displays contact information in the console.
      */
     @Override
     public void displayContactInfo() {

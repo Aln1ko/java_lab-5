@@ -1,21 +1,17 @@
-/*
-Побудувати програму для роботи з класом Час. Програма повинна забезпечувати функції
-збільшення/зменшення на 1 годину, хвилину, секунду, введення/виведення значень.
- */
 /**
- * Клас, що представляє час у годинах, хвилинах і секундах.
+ * A class representing time in hours, minutes, and seconds.
  */
 public class ex7 implements ex7interface {
 
-    /** Години */
+    /** Hours */
     private int hour;
-    /** Хвилини */
+    /** Minutes */
     private int minute;
-    /** Секунди */
+    /** Seconds */
     private int second;
 
     /**
-     * Збільшує годину на 1.
+     * Increases the hour by 1.
      */
     @Override
     public void increaseHour() {
@@ -24,7 +20,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Зменшує годину на 1.
+     * Decreases the hour by 1.
      */
     @Override
     public void decreaseHour() {
@@ -33,7 +29,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Збільшує хвилини на 1.
+     * Increases the minutes by 1.
      */
     @Override
     public void increaseMinute() {
@@ -44,7 +40,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Зменшує хвилини на 1.
+     * Decreases the minutes by 1.
      */
     @Override
     public void decreaseMinute() {
@@ -55,7 +51,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Збільшує секунди на 1.
+     * Increases the seconds by 1.
      */
     @Override
     public void increaseSecond() {
@@ -66,7 +62,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Зменшує секунди на 1.
+     * Decreases the seconds by 1.
      */
     @Override
     public void decreaseSecond() {
@@ -77,7 +73,7 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Виводить значення годин, хвилин і секунд у консоль.
+     * Displays the values of hours, minutes, and seconds in the console.
      */
     @Override
     public void displayTime() {
@@ -85,11 +81,11 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Встановлює години, хвилини і секунди.
+     * Sets the hours, minutes, and seconds.
      *
-     * @param hour   години
-     * @param minute хвилини
-     * @param second секунди
+     * @param hour   hours
+     * @param minute minutes
+     * @param second seconds
      */
     @Override
     public void setTime(int hour, int minute, int second) {
@@ -99,57 +95,56 @@ public class ex7 implements ex7interface {
     }
 
     /**
-     * Повертає години.
+     * Gets the hours.
      *
-     * @return години
+     * @return hours
      */
     public int getHour() {
         return hour;
     }
 
     /**
-     * Встановлює години.
+     * Sets the hours.
      *
-     * @param hour години
+     * @param hour hours
      */
     public void setHour(int hour) {
         this.hour = hour;
     }
 
     /**
-     * Повертає хвилини.
+     * Gets the minutes.
      *
-     * @return хвилини
+     * @return minutes
      */
     public int getMinute() {
         return minute;
     }
 
     /**
-     * Встановлює хвилини.
+     * Sets the minutes.
      *
-     * @param minute хвилини
+     * @param minute minutes
      */
     public void setMinute(int minute) {
         this.minute = minute;
     }
 
     /**
-     * Повертає секунди.
+     * Gets the seconds.
      *
-     * @return секунди
+     * @return seconds
      */
     public int getSecond() {
         return second;
     }
 
     /**
-     * Встановлює секунди.
+     * Sets the seconds.
      *
-     * @param second секунди
+     * @param second seconds
      */
     public void setSecond(int second) {
         this.second = second;
     }
-
 }

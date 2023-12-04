@@ -3,25 +3,25 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Клас для каталогу фільмів, який реалізує інтерфейс {@link ex21interface}.
- * Забезпечує функціонал додавання, видалення та сортування фільмів за назвою кіностудії.
+ * Class for a movie catalog that implements the {@link ex21interface} interface.
+ * Provides functionality to add, remove, and sort movies by studio name.
  */
 public class MovieCatalog implements ex21interface {
 
-    /** Список фільмів у каталозі */
+    /** List of movies in the catalog */
     private List<Movie> movies;
 
     /**
-     * Конструктор класу MovieCatalog. Ініціалізує список фільмів.
+     * Constructor for the MovieCatalog class. Initializes the list of movies.
      */
     public MovieCatalog() {
         movies = new ArrayList<>();
     }
 
     /**
-     * Додає фільм до каталогу.
+     * Adds a movie to the catalog.
      *
-     * @param movie фільм для додавання
+     * @param movie movie to be added
      */
     @Override
     public void addMovie(Movie movie) {
@@ -29,9 +29,9 @@ public class MovieCatalog implements ex21interface {
     }
 
     /**
-     * Видаляє фільм з каталогу.
+     * Removes a movie from the catalog.
      *
-     * @param movie фільм для видалення
+     * @param movie movie to be removed
      */
     @Override
     public void removeMovie(Movie movie) {
@@ -39,9 +39,9 @@ public class MovieCatalog implements ex21interface {
     }
 
     /**
-     * Отримує відсортований за назвою кіностудії список фільмів.
+     * Gets a sorted list of movies by studio name.
      *
-     * @return відсортований список фільмів
+     * @return sorted list of movies
      */
     @Override
     public List<Movie> getMoviesSortedByStudio() {

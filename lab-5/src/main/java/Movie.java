@@ -1,29 +1,29 @@
 import java.util.Comparator;
 
 /**
- * Клас, що представляє фільм з основними характеристиками.
+ * Class representing a movie with its primary characteristics.
  */
 public class Movie {
 
-    /** Назва фільму */
+    /** Title of the movie */
     private String title;
-    /** Назва кіностудії */
+    /** Studio name */
     private String studio;
-    /** Ім'я режисера */
+    /** Director's name */
     private String director;
-    /** Ім'я головного актора */
+    /** Main actor's name */
     private String mainActor;
-    /** Рік виходу фільму */
+    /** Release year of the movie */
     private int releaseYear;
 
     /**
-     * Конструктор класу Movie.
+     * Constructor for the Movie class.
      *
-     * @param title       назва фільму
-     * @param studio      назва кіностудії
-     * @param director    ім'я режисера
-     * @param mainActor   ім'я головного актора
-     * @param releaseYear рік виходу фільму
+     * @param title       movie title
+     * @param studio      studio name
+     * @param director    director's name
+     * @param mainActor   main actor's name
+     * @param releaseYear movie's release year
      */
     Movie(String title, String studio, String director, String mainActor, int releaseYear) {
         this.title = title;
@@ -34,8 +34,8 @@ public class Movie {
     }
 
     /**
-     * Конструктор класу Movie за замовчуванням.
-     * Ініціалізує поля фільму стандартними значеннями.
+     * Default constructor for the Movie class.
+     * Initializes the movie's fields with default values.
      */
     Movie() {
         this.title = "title";
@@ -46,45 +46,45 @@ public class Movie {
     }
 
     /**
-     * Повертає назву фільму.
+     * Returns the title of the movie.
      *
-     * @return назва фільму
+     * @return movie title
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Повертає назву кіностудії.
+     * Returns the studio name.
      *
-     * @return назва кіностудії
+     * @return studio name
      */
     public String getStudio() {
         return studio;
     }
 
     /**
-     * Повертає ім'я режисера.
+     * Returns the director's name.
      *
-     * @return ім'я режисера
+     * @return director's name
      */
     public String getDirector() {
         return director;
     }
 
     /**
-     * Повертає ім'я головного актора.
+     * Returns the main actor's name.
      *
-     * @return ім'я головного актора
+     * @return main actor's name
      */
     public String getMainActor() {
         return mainActor;
     }
 
     /**
-     * Повертає рік виходу фільму.
+     * Returns the release year of the movie.
      *
-     * @return рік виходу фільму
+     * @return release year of the movie
      */
     public int getReleaseYear() {
         return releaseYear;

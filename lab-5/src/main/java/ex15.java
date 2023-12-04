@@ -1,23 +1,20 @@
-/*
-Створити клас Лінія. Поля - координати початку і кінця.
-Функції-члени обчислюють довжину лінії, переміщують її,
-встановлюють і повертають значення полів.
- */
 /**
- * Клас, що представляє лінію з координатами початку і кінця.
+ * Class representing a line with coordinates of its start and end points.
  */
 public class ex15 implements ex15interface {
 
+    /** Array representing the coordinates of the start point */
     private double[] startPoint;
+    /** Array representing the coordinates of the end point */
     private double[] endPoint;
 
     /**
-     * Конструктор для створення лінії з заданими координатами початку і кінця.
+     * Constructor for creating a line with specified start and end coordinates.
      *
-     * @param startX координата X початку лінії
-     * @param startY координата Y початку лінії
-     * @param endX   координата X кінця лінії
-     * @param endY   координата Y кінця лінії
+     * @param startX X-coordinate of the line's start
+     * @param startY Y-coordinate of the line's start
+     * @param endX   X-coordinate of the line's end
+     * @param endY   Y-coordinate of the line's end
      */
     public ex15(double startX, double startY, double endX, double endY) {
         startPoint = new double[]{startX, startY};
@@ -25,7 +22,7 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Конструктор для створення лінії з початком у точці (0,0) та кінцем у точці (1,1).
+     * Constructor for creating a line starting at (0,0) and ending at (1,1).
      */
     public ex15() {
         startPoint = new double[]{0, 0};
@@ -33,9 +30,9 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Обчислює довжину лінії за допомогою формули відстані між двома точками.
+     * Calculates the length of the line using the distance formula between two points.
      *
-     * @return довжина лінії
+     * @return the length of the line
      */
     @Override
     public double calculateLength() {
@@ -45,10 +42,10 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Переміщує лінію на вказану кількість координат по осі X та Y.
+     * Moves the line by specified offsets along the X and Y axes.
      *
-     * @param xOffset зміщення по осі X
-     * @param yOffset зміщення по осі Y
+     * @param xOffset offset along the X-axis
+     * @param yOffset offset along the Y-axis
      */
     @Override
     public void moveLine(double xOffset, double yOffset) {
@@ -59,10 +56,10 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Встановлює координати початку лінії.
+     * Sets the coordinates of the line's start point.
      *
-     * @param x координата X початку лінії
-     * @param y координата Y початку лінії
+     * @param x X-coordinate of the line's start
+     * @param y Y-coordinate of the line's start
      */
     @Override
     public void setStartPoint(double x, double y) {
@@ -71,10 +68,10 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Встановлює координати кінця лінії.
+     * Sets the coordinates of the line's end point.
      *
-     * @param x координата X кінця лінії
-     * @param y координата Y кінця лінії
+     * @param x X-coordinate of the line's end
+     * @param y Y-coordinate of the line's end
      */
     @Override
     public void setEndPoint(double x, double y) {
@@ -83,9 +80,9 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Повертає координати початку лінії.
+     * Gets the coordinates of the line's start point.
      *
-     * @return масив з координатами X та Y початку лінії
+     * @return an array with X and Y coordinates of the line's start
      */
     @Override
     public double[] getStartPoint() {
@@ -93,9 +90,9 @@ public class ex15 implements ex15interface {
     }
 
     /**
-     * Повертає координати кінця лінії.
+     * Gets the coordinates of the line's end point.
      *
-     * @return масив з координатами X та Y кінця лінії
+     * @return an array with X and Y coordinates of the line's end
      */
     @Override
     public double[] getEndPoint() {
